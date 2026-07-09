@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Coletivo | Empatia & Impacto</title>
+    <style>
+        /* Nova Identidade Visual - Tons Orgânicos e Modernos */
+        :root {
+            --bg-principal: #fbf9f6; /* Tom de areia bem claro */
+            --cor-foco: #2c4a3e;     /* Verde oliva profundo */
+            --cor-acento: #d97706;   /* Terracota / Âmbar */
+            --texto-escuro: #292524; /* Grafite quente */
+            --card-fundo: #ffffff;
+            --borda-suave: #e7e5e4;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-principal);
+            color: var(--texto-escuro);
+            line-height: 1.7;
+        }
+
+        /* Cabeçalho Reorganizado */
+        .topo-pagina {
+            background-color: var(--card-fundo);
+            border-bottom: 1px solid var(--borda-suave);
+            padding: 25px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h1 {
+            color: var(--cor-foco);
+            font-size: 26px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        /* Links do Menu Personalizados estilo Botão */
+        .menu-navegacao {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .menu-navegacao a {
+            text-decoration: none;
+            color: var(--texto-escuro);
+            font-weight: 600;
+            font-size: 14px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .menu-navegacao a:hover {
+            background-color: var(--cor-foco);
+            color: var(--bg-principal);
+        }
+
+        /* Container de Conteúdo */
+        .embrulho-conteudo {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 24px;
+        }
+
+        /* Seção de Introdução */
+        .bloco-introducao {
+            text-align: center;
+            margin-bottom: 60px;
+            padding: 20px;
+        }
+
+        .bloco-introducao p {
+            font-size: 1.25rem;
+            color: #57534e;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Estrutura de Grid Assimétrica */
+        .mural-ideias {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .bloco-card {
+            background-color: var(--card-fundo);
+            border: 1px solid var(--borda-suave);
+            border-radius: 16px;
+            overflow: hidden;
+            flex: 1;
+            min-width: 320px;
+            box-shadow: 0 4px 20px rgba(44, 74, 62, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .bloco-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(44, 74, 62, 0.1);
+        }
+
+        .bloco-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+        }
+
+        .texto-card {
+            padding: 30px;
+        }
+
+        .texto-card h2 {
+            color: var(--cor-foco);
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        /* Nova Seção de Exemplos Práticos */
+        .painel-exemplos {
+            background-color: var(--cor-foco);
+            color: var(--bg-principal);
+            border-radius: 24px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+
+        .painel-exemplos h3 {
+            font-size: 24px;
+            color: var(--cor-acento);
+            margin-bottom: 20px;
+        }
+
+        /* Lista de exemplos customizada */
+        .lista-pratica {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .lista-pratica li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+
+        /* Marcador personalizado para a lista */
+        .lista-pratica li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: var(--cor-acento);
+            font-weight: bold;
+        }
+
+        /* Rodapé Personalizado */
+        .rodape-customizado {
+            text-align: center;
+            padding: 40px;
+            background-color: #1c1917;
+            color: #a8a29e;
+            margin-top: 80px;
+        }
+
+        .rodape-customizado p {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="topo-pagina">
+        <h1>Mundo Coletivo</h1>
+        <div>
+            <ul class="menu-navegacao">
+                <li><a href="#">Início</a></li>
+                <li><a href="#empatia">Empatia</a></li>
+                <li><a href="#cooperacao">Cooperação</a></li>
+                <li><a href="#pratica">Ações Práticas</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="embrulho-conteudo">
+        
+        <div class="bloco-introducao">
+            <p>Não caminhamos sozinhos. A evolução social e o bem-estar coletivo dependem diretamente da nossa capacidade de sintonizar com a dor alheia e unir forças para criar soluções reais.</p>
+        </div>
+
+        <div class="mural-ideias">
+            
+            <div class="bloco-card" id="empatia">
+                <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=800&q=80" alt="Conexão e escuta atenta">
+                <div class="texto-card">
+                    <h2>Empatia: Escuta Consciente</h2>
+                    <p>Mais do que apenas se colocar no lugar do outro, a empatia exige desarmar nossos próprios julgamentos. É o exercício ativo de validar a vivência de alguém, oferecendo um espaço seguro de acolhimento onde a outra pessoa se sinta verdadeiramente ouvida e compreendida.</p>
+                </div>
+            </div>
+
+            <div class="bloco-card" id="cooperacao">
+                <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?auto=format&fit=crop&w=800&q=80" alt="Pessoas colaborando juntas">
+                <div class="texto-card">
+                    <h2>Cooperação: Impacto Coletivo</h2>
+                    <p>A cooperação acontece quando deixamos o foco no sucesso individual de lado para construir pontes. Quando grupos somam saberes e origens distintas, soluções inovadoras emergem. Dividir as tarefas e compartilhar os méritos transforma a realidade de comunidades inteiras.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="painel-exemplos" id="pratica">
+            <h3>Pequenas Grandes Ações do Cotidiano</h3>
+            <p>Promover uma cultura de apoio mútuo começa nos pequenos hábitos diários. Veja como fazer a sua parte:</p>
+            
+            <ul class="lista-pratica">
+                <li><strong>Pratique a escuta ativa:</strong> Deixe as distrações de lado quando alguém estiver compartilhando um problema com você.</li>
+                <li><strong>Apoie iniciativas locais:</strong> Colabore com projetos, hortas comunitárias ou bancos de alimentos do seu bairro.</li>
+                <li><strong>Compartilhe conhecimento:</strong> Ajude um colega com dificuldades em alguma matéria ou habilidade técnica.</li>
+                <li><strong>Gentileza espontânea:</strong> Reconheça e agradeça sinceramente o trabalho das pessoas ao seu redor.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="rodape-customizado">
+        <p>&copy; 2026 Mundo Coletivo. Um projeto exclusivo focado em design limpo e impacto social através do HTML e CSS.</p>
+    </div>
+
+</body>
+</html>
